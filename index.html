@@ -3,35 +3,102 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A starter website project.">
-    <title>Website</title>
+    <meta name="description" content="Personal website for Francesco Bombassei De Bona.">
+    <title>Francesco Bombassei De Bona</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <main class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Francesco Bombassei De Bona</a>
+      <nav class="top-links" aria-label="Primary links">
+        <a href="cv.html">CV</a>
+        <a href="https://scholar.google.com/scholar?q=%22Francesco+Bombassei+De+Bona%22" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/frabomba6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/frabomba6/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </header>
+
+    <main>
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">New project</p>
-        <h1 id="page-title">Website</h1>
-        <p class="intro">
-          A clean static starter ready for GitHub Pages. Edit this page, commit
-          your changes, and publish from the main branch.
-        </p>
-        <a class="button" href="https://github.com/new">Create on GitHub</a>
+        <div class="hero-copy">
+          <p class="eyebrow">PhD student · Affective computing · Explainable AI</p>
+          <h1 id="page-title">Building human-centered AI for wearable health technology.</h1>
+          <p class="intro">
+            I am a PhD student at USI working on affective computing, wearable
+            sensing, and explainable AI methods that help people understand and
+            trust intelligent systems in health-related contexts.
+          </p>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="button" href="cv.html">View CV</a>
+            <a class="button secondary" href="#work">See work</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile summary">
+          <p class="panel-kicker">Current Focus</p>
+          <ul>
+            <li>Explainable AI for wearable devices</li>
+            <li>Affective and health sensing</li>
+            <li>LLM-assisted evaluation of explanations</li>
+          </ul>
+        </aside>
       </section>
 
-      <section class="content-grid" aria-label="Project highlights">
-        <article>
-          <h2>Fast to edit</h2>
-          <p>Plain HTML and CSS keep the project lightweight and easy to change.</p>
-        </article>
-        <article>
-          <h2>Git ready</h2>
-          <p>The repository can track every update from the first version.</p>
-        </article>
-        <article>
-          <h2>Pages ready</h2>
-          <p>A GitHub Actions workflow is included for automatic deployment.</p>
-        </article>
+      <section id="work" class="section-block" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-title">Research themes</h2>
+        </div>
+        <div class="content-grid">
+          <article>
+            <h3>Explainable AI</h3>
+            <p>
+              Designing and evaluating explanation methods that make model
+              behavior more inspectable for people using AI systems.
+            </p>
+          </article>
+          <article>
+            <h3>Wearable Sensing</h3>
+            <p>
+              Working with physiological and behavioral signals from wearable
+              devices for health and affective computing applications.
+            </p>
+          </article>
+          <article>
+            <h3>Human Evaluation</h3>
+            <p>
+              Exploring scalable ways to evaluate explanations, including the
+              use of LLMs as a complement to traditional user studies.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block split-section" aria-labelledby="cv-title">
+        <div>
+          <p class="eyebrow">CV</p>
+          <h2 id="cv-title">Academic profile in one place</h2>
+        </div>
+        <div class="text-panel">
+          <p>
+            The CV page is ready for education, appointments, publications,
+            talks, teaching, service, awards, and a downloadable PDF when you
+            want to add one.
+          </p>
+          <a class="text-link" href="cv.html">Open the CV page</a>
+        </div>
+      </section>
+
+      <section class="section-block contact-strip" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Connect</p>
+          <h2 id="contact-title">Find me online</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://scholar.google.com/scholar?q=%22Francesco+Bombassei+De+Bona%22" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/frabomba6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/frabomba6/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://github.com/FraBomba6" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </section>
     </main>
   </body>
