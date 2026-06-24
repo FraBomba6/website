@@ -17,3 +17,8 @@ Then visit `http://localhost:8000`.
 This project includes a GitHub Actions workflow in `.github/workflows/pages.yml`.
 After the repository is pushed to GitHub, enable Pages with GitHub Actions as the
 source in the repository settings.
+
+## Theme
+
+The site is adapted from the structure of Start Bootstrap Resume, an MIT-licensed
+Bootstrap resume/CV theme: https://startbootstrap.com/theme/resume
