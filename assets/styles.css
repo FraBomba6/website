@@ -182,6 +182,27 @@ h3 {
   object-fit: cover;
 }
 
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.cv-contact a {
+  color: var(--bs-primary);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cv-contact a:hover {
+  text-decoration: underline;
+}
+
+.cv-contact span::before,
+.cv-contact a + a::before {
+  color: #adb5bd;
+}
+
 .cv-block {
   padding: 2rem;
   border: 1px solid #dee2e6;
@@ -201,6 +222,10 @@ h3 {
   gap: 2rem;
   border-top: 1px solid #edf0f2;
   padding-top: 1.25rem;
+}
+
+.cv-item + .cv-item {
+  margin-top: 1.25rem;
 }
 
 .cv-item > span {
@@ -225,6 +250,16 @@ h3 {
   background: #f8f9fa;
   color: #495057;
   font-weight: 800;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.reference-grid p {
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 992px) {
@@ -284,5 +319,9 @@ h3 {
   .cv-item > span {
     display: inline-flex;
     margin-top: 0.75rem;
+  }
+
+  .reference-grid {
+    grid-template-columns: 1fr;
   }
 }
